@@ -2,6 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test('test', async ({ page }) => {
   await page.goto('https://www.amazon.com/');
+  await page.reload();
   // await page.pause()
   const dismisBtn = page.locator('//input[@data-action-type="DISMISS"]');
   if (await dismisBtn.isVisible()) {
