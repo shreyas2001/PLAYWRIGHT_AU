@@ -22,5 +22,5 @@ test('API POST request example',async({request})=>{
 
     expect(Response.status()).toBe(201);
     const responseBody = await respost.json();
-    expect(responseBody).toHaveTest("name","Shreyas");
+    expect(responseBody).toHaveTest("name","Shreyas")   ;
 });
